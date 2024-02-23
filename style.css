@@ -1,0 +1,100 @@
+* {
+  font-size: 16px;
+  font-family: ysabeau infant;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: ysabeau infant;
+  src: url(./YsabeauInfant-Medium.ttf);
+}
+
+body {
+  background: #2c1762;
+  color: white;
+  padding: 20px 4%;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 400;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a{
+  color: white;
+}
+
+.see{
+  background-color: black;
+  border: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+img {
+  height: 50px;
+}
+
+button:not(.reset, .auto-play-button) {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.result {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.score {
+  margin-top: 60px;
+}
+
+.reset{
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 8px 15px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+.auto-play-button{
+  background-color: white;
+  color: black;
+  border: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+@media(max-width: 740px) {
+  body {
+    text-align: center;
+  }
+ a .title{
+    font-size: 15px;
+    font-weight: 200;
+  }
+  .move{
+    width: 60px;
+    height: 60px;
+  }
+  .navbar{
+    flex-direction: column-reverse;
+    margin-bottom: 35px;
+  }
+}

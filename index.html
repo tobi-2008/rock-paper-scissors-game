@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROCK-PAPER-SCISSORS [GAME]</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <a href=""><p class="title">ROCK PAPER SCISSORS [GAME]</p></a>
+    </div>
+    <a href="https://github.com/tobi-2008" class="see">SEE MORE</a>
+  </div>
+  <button class="move" onclick="playGame('rock')"><img src="./rock-emoji.png" alt="img"></button>
+
+  <button class="move" onclick="playGame('paper')"><img src="./paper-emoji.png" alt="img"></button>
+
+  <button class="move" onclick="playGame('scissors')"><img src="./scissors-emoji.png" alt="img"></button>
+
+  <p class="js-score result"></p>
+  <p class="js-moves"></p>
+  <p class="js-result score"></p>
+
+  <button class="reset" onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score')
+    updateScoreElement();
+  ">Reset Score</button>
+
+  <button class="auto-play-button" onclick="
+  autoPlay();
+  ">Auto Play</button>
+
+  <script src="./scripts/app.js"></script>
+</body>
+
+</html>
